@@ -4,6 +4,7 @@ const purplebtn=document.querySelector('#purple');
 const darkbtn=document.querySelector('#dark');
 const lightbtn=document.querySelector('#light');
 const header=document.querySelector('#heading');
+const btns=document.querySelectorAll('button');
 
 greenbtn.addEventListener('click',function(){
   document.body.style.backgroundColor='green';
@@ -26,6 +27,10 @@ purplebtn.addEventListener('click',function(){
 darkbtn.addEventListener('click',function(){
   document.body.style.backgroundColor='black';
   header.textContent='Dark theme';
+  header.style.color='black';
+  btns.style.backgroundColor='dark gray';
+  btns.style.color='white';
+
 
 });
 
